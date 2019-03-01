@@ -1,4 +1,4 @@
-package com.soft1010.dynamacProxy;
+package com.soft1010.designpatterns.proxy.dynamacProxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -21,7 +21,6 @@ public class TicketInvocationHandler implements InvocationHandler {
         this.feeHandler = feeHandler;
     }
 
-    @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         TicketInvocation ticketInvocation = new TicketInvocation((String)args[0],(BigDecimal) args[1]);
         if(!ticketValidator.validate(ticketInvocation)){

@@ -1,4 +1,4 @@
-package com.soft1010.dynamacProxy;
+package com.soft1010.designpatterns.proxy.dynamacProxy;
 
 import java.lang.reflect.Proxy;
 import java.math.BigDecimal;
@@ -14,7 +14,6 @@ public class Test {
 
         TicketService ticketService = new TicketServiceImpl();
         TicketValidator ticketValidator = new TicketValidator() {
-            @Override
             public boolean validate(TicketInvocation ticketInvocation) {
                 return (ticketInvocation==null || ticketInvocation.getIDCard()==null ||
                         ticketInvocation.getMoney()==null)?false:true;
@@ -22,7 +21,6 @@ public class Test {
         };
 
         FeeHandler feeHandler = new FeeHandler() {
-            @Override
             public void handle(Ticket ticket) {
                 if(ticket!=null){
                     ticket.setFee(new BigDecimal(10));

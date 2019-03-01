@@ -1,4 +1,4 @@
-package com.soft1010.filterChain;
+package com.soft1010.designpatterns.filterChain;
 
 /**
  * @Author zhangjifu
@@ -7,7 +7,6 @@ package com.soft1010.filterChain;
  */
 public class TestFilter2 implements Filter {
 
-    @Override
     public void doFiler(Request request, Response response, FilterChain filterChain) {
         System.out.println("testFilter2------");
         response.setResponse(response.getResponse()+" | test2");

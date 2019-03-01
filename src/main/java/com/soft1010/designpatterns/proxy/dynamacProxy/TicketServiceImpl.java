@@ -1,6 +1,4 @@
-package com.soft1010.dynamacProxy;
-
-import com.sun.xml.internal.bind.v2.model.core.ID;
+package com.soft1010.designpatterns.proxy.dynamacProxy;
 
 import java.math.BigDecimal;
 import java.util.Random;
@@ -12,7 +10,6 @@ import java.util.Random;
  */
 public class TicketServiceImpl implements TicketService {
 
-    @Override
     public Ticket sellTicket(String IDCard, BigDecimal money) {
         Ticket ticket = new Ticket();
         ticket.setTicketNo(new Random().nextInt(10000) + "");

@@ -1,4 +1,4 @@
-package com.soft1010.filterChain;
+package com.soft1010.designpatterns.filterChain;
 
 /**
  * @Author zhangjifu
@@ -22,6 +22,9 @@ public class FilterChainTest {
 
         filterChain.doFilter(request,response);
         System.out.println(response.getResponse());
+
+        System.out.println(String.format("%s--%d","123",123).toString());
+
     }
 
 

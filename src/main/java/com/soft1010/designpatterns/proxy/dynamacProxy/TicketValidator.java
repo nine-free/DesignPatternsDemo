@@ -1,4 +1,4 @@
-package com.soft1010.dynamacProxy;
+package com.soft1010.designpatterns.proxy.dynamacProxy;
 
 /**
  * @Author zhangjifu

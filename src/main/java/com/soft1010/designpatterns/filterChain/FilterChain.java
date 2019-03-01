@@ -1,4 +1,4 @@
-package com.soft1010.filterChain;
+package com.soft1010.designpatterns.filterChain;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class FilterChain {
 
-    private List<Filter> filters = new ArrayList<>();
+    private List<Filter> filters = new ArrayList();
 
     public void addFilter(Filter filter){
         filters.add(filter);

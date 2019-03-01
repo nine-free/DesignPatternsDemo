@@ -1,4 +1,4 @@
-package com.soft1010.filterChain;
+package com.soft1010.designpatterns.filterChain;
 
 /**
  * @Author zhangjifu
